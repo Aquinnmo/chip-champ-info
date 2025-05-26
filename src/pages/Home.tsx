@@ -39,6 +39,9 @@ const Home: React.FC = () => {
           <p>This project is currently in development. We hope to get it up and running ASAP!</p>
           <hr />
           <h5>May 26, 2025</h5>
+          <p className="mb-0">Published the info page for Chip Champ!</p>
+          <hr />
+          <h5>May 25, 2025</h5>
           <p className="mb-0">Locally developed the info page for Chip Champ.</p>
         </div>
       </div>
