@@ -1,0 +1,119 @@
+/* Custom styles for Chip Champ - Virtual Poker Chip Service */
+
+:root {
+    --primary-color: #2c5530;        /* Forest green - poker table felt */
+    --secondary-color: #8b4513;      /* Saddle brown - poker chips */
+    --success-color: #228b22;        /* Forest green variant */
+    --info-color: #4169e1;           /* Royal blue */
+    --warning-color: #ffd700;        /* Gold - poker accent */
+    --danger-color: #dc143c;         /* Crimson red */
+    --casino-gold: #ffd700;          /* Casino gold */
+    --felt-green: #0f5132;           /* Deep poker table green */
+    --chip-red: #dc3545;             /* Poker chip red */
+    --chip-blue: #0d6efd;            /* Poker chip blue */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(44, 85, 48, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+    margin: 0;
+    display: block;
+    min-height: 100vh;
+}
+
+.hero-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--felt-green) 0%, var(--primary-color) 50%, #1a472a 100%);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-section h1 {
+    color: white !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--felt-green);
+    border-color: var(--felt-green);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+    max-width: 40px;
+    height: auto;
+}
+
+.alert-info {
+    background-color: rgba(65, 105, 225, 0.1);
+    border-color: var(--info-color);
+    color: #0c4a6e;
+}
+
+.alert-warning {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-color: var(--warning-color);
+    color: #92400e;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}

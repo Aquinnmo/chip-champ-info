@@ -7,7 +7,8 @@ const Layout: React.FC = () => {
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <Link to="/" className="navbar-brand fw-bold">
+            <Link to="/" className="navbar-brand">
+              <img src="/cc_logo.png" alt="Chip Champ Logo" className="me-2" style={{maxWidth: '40px', height: 'auto'}} />
               Chip Champ
             </Link>
             <button 
@@ -21,10 +22,10 @@ const Layout: React.FC = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">Home</Link>
+                  <Link to="/" className="nav-link">🏠 Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
+                  <Link to="/about" className="nav-link">ℹ️ About</Link>
                 </li>
               </ul>
             </div>
@@ -32,13 +33,13 @@ const Layout: React.FC = () => {
         </nav>
       </header>
       
-      <main className="flex-grow-1">
+      <main className="container my-5">
         <Outlet />
       </main>
       
-      <footer className="bg-dark text-light py-3 mt-auto">
+      <footer className="bg-dark text-light py-4 mt-5">
         <div className="container text-center">
-          <p className="mb-0">&copy; 2025 Chip Champ - Virtual Poker Chip Management</p>
+          <p>&copy; 2025 Chip Champ - Virtual Poker Chip Management. All rights reserved.</p>
         </div>
       </footer>
     </div>
