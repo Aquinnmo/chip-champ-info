@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -32,9 +33,16 @@ const Home: React.FC = () => {
                 <h5 className="card-title">Accessible Poker</h5>
                 <p className="card-text">Making poker more accessible to everyone by eliminating the need for physical chips and complex pot calculations.</p>
               </div>
-            </div>
-          </div>
-        </div>        <div className="alert alert-info mt-4" role="alert">
+            </div>          </div>
+        </div>
+        
+        <div className="text-center mb-4">
+          <Link to="/about" className="btn btn-primary btn-lg">
+            Learn More
+          </Link>
+        </div>
+        
+        <div className="alert alert-info mt-4" role="alert">
           <h4 className="alert-heading">Project Timeline</h4>
           <p>This project is currently in development. We hope to get it up and running ASAP!</p>
           <hr />
